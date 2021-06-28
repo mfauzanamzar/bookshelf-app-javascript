@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #FF6F3C;
+    color: white;
+}
+
+.head_bar__title{
+    margin: 0 40px 0 40px;
+}
+
+.container {
+   
+    display: flex;
+    margin: 40px;
+    padding: 16px;
+
+}
+
+.col-1{
+    width: 40%;
+}
+
+.col-2{
+    width: 60%;
+    margin-left: 20px;
+}
+
+.input_section{
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+   top: 30px;
+   position: sticky;
+    
+}
+
+.input_section .input{
+    position: relative;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #FF6F3C;
+    margin-bottom: 10px;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+  
+}
+
+.input_section > form > button {
+    background-color: #FF6F3C;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+}
+
+.input_section > form > .input > input:focus {
+  
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #FF6F3C;
+}
+
+
+.input_section > form > .input > input:focus ~ span,
+.input_section > form > .input > input:valid ~ span {
+    top: -12px;
+    left: 16px;
+    color: #FF6F3C;
+    font-weight: 200;
+    
+    
+    
+}
+
+
+.input_section > form > .input > span {
+    color: #808080;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    padding: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    background-color: white;
+}
+
+
+
+
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #FF6F3C;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    max-width: auto;
+    margin-left: auto; 
+    margin-right: 0;
+    align-items: center;
+    
+}
+
+.search_section > h2 {
+    color: #FF6F3C;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    width: 400px;
+}
+
+.search_section > form > button {
+ 
+    
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url(../assets/searchicon.png);
+    background-position:center;
+    background-repeat: no-repeat;
+   background-size: 30px;
+    
+}
+
+.book_shelf {
+    
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+}
+
+.book_shelf > h2 {
+    color: #FF6F3C;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item > .item {
+    padding: 8px 16px 16px 16px;
+    border-left: 10px solid #FF6F3C;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    text-align: right;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+    font-style: italic;
+}
+
+
+
+/*button*/
+
+.check-button {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    text-align: right;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button{
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+    color: #FF6F3C;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button{
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+/*modal*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 55%;
+   top: 80%;
+    width: 60%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    animation: fadeIn 1s;
+   
+    
+   
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #FF6F3C;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+  }
+
+  .modal_button{
+      text-align: right;
+      margin-top: 20px;
+  }
+
+  .modal_buttonx{
+      background-color: white;
+      outline: none;
+      border: 2px solid #FF6F3C ;
+      padding: 5px;
+      border-radius: 5px;
+      width: 60px;
+      cursor: pointer;
+      text-align: center;
+      margin: 5px;
+      color: #FF6F3C;
+          
+  }
+
+  
+
+  .modal_buttony{
+    background-color: #FF6F3C;
+    outline: none;
+    border: 2px solid #FF6F3C ;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+    color: white;
+    
+    
+}
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+@media only screen and (max-width : 768px) {
+    .container{
+        display: block;
+    }
+
+    .col-1{
+        width: 100%;
+    }
+
+    .col-2{
+        margin-top: 30px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    
+}
